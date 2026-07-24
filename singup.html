@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="signup-box">
+        <h2>Create Account</h2>
+
+<form onsubmit="showPopup(event)">
+
+    <h3>Personal Information</h3>
+
+    <div class="input-group">
+        <input type="text" required>
+        <label>Full Name</label>
+    </div>
+
+    <div class="input-group">
+        <input type="text" required>
+        <label>Username</label>
+    </div>
+
+    <div class="input-group">
+        <input type="email" required>
+        <label>Email</label>
+    </div>
+
+    <div class="input-group">
+        <input type="tel" required>
+        <label>Phone Number</label>
+    </div>
+
+    <div class="input-group">
+        <input type="date" required>
+        <label class="top-label">Date of Birth</label>
+    </div>
+
+    <div class="radio-group">
+        <p>Gender(you look like Gay tho)</p>
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+        <label><input type="radio" name="gender"> Gay</label>
+        <label><input type="radio" name="gender"> Crossont</label>
+        <label><input type="radio" name="gender"> Other</label>
+    </div>
+
+    <h3>Address Details</h3>
+
+    <div class="input-group">
+        <input type="text" required>
+        <label>Street Address</label>
+    </div>
+
+    <div class="input-group">
+        <input type="text" required>
+        <label>City</label>
+    </div>
+
+    <div class="input-group">
+        <input type="text" required>
+        <label>State / Province</label>
+    </div>
+
+    <div class="input-group">
+        <input type="text" required>
+        <label>Zip Code</label>
+    </div>
+
+    <div class="input-group">
+        <select required>
+            <option value="">Select Country</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+        </select>
+    </div>
+
+    <h3>Education</h3>
+
+    <div class="input-group">
+        <input type="text">
+        <label>High School Name</label>
+    </div>
+
+    <div class="input-group">
+        <input type="text">
+        <label>College / University</label>
+    </div>
+
+    <div class="input-group">
+        <input type="text">
+        <label>Degree</label>
+    </div>
+
+    <div class="input-group">
+        <input type="text">
+        <label>Field of Study</label>
+    </div>
+
+    <h3>Work Information</h3>
+
+    <div class="input-group">
+        <input type="text">
+        <label>Company Name</label>
+    </div>
+
+    <div class="input-group">
+        <input type="text">
+        <label>Job Title</label>
+    </div>
+
+    <div class="input-group">
+        <input type="number">
+        <label>Years of Experience</label>
+    </div>
+
+    <h3>Identity Verification</h3>
+
+    <div class="input-group">
+        <input type="text">
+        <label>National ID Number</label>
+    </div>
+
+    <div class="input-group">
+        <input type="file">
+        <label class="top-label">Upload ID Proof</label>
+    </div>
+
+    <h3>Social Links</h3>
+
+    <div class="input-group">
+        <input type="text">
+        <label>Instagram</label>
+    </div>
+
+    <div class="input-group">
+        <input type="text">
+        <label>Twitter / X</label>
+    </div>
+
+    <div class="input-group">
+        <input type="text">
+        <label>LinkedIn</label>
+    </div>
+
+    <h3>Security</h3>
+
+    <div class="input-group">
+        <input type="password" required>
+        <label>Password</label>
+    </div>
+
+    <div class="input-group">
+        <input type="password" required>
+        <label>Confirm Password</label>
+    </div>
+
+    <div class="input-group">
+        <select required>
+            <option value="">Security Question</option>
+            <option>First pet name?</option>
+            <option>Mother's maiden name?</option>
+            <option>Favorite teacher?</option>
+        </select>
+    </div>
+
+    <div class="input-group">
+        <input type="text" required>
+        <label>Answer</label>
+    </div>
+
+    <h3>Emergency Contact</h3>
+
+    <div class="input-group">
+        <input type="text">
+        <label>Emergency Contact Name</label>
+    </div>
+
+    <div class="input-group">
+        <input type="tel">
+        <label>Emergency Phone</label>
+    </div>
+
+    <h3>Preferences</h3>
+
+    <div class="checkbox-group">
+        <label><input type="checkbox"> Receive Emails</label>
+        <label><input type="checkbox"> Receive SMS</label>
+        <label><input type="checkbox"> Personalized Ads</label>
+    </div>
+
+    <h3>Final Agreement</h3>
+
+    <div class="checkbox-group">
+        <label>
+            <input type="checkbox" required>
+            I agree to Terms & Conditions
+        </label>
+    </div>
+
+    <button type="submit">Create Account</button>
+
+</form>
+    </div>
+</div>
+
+<!-- ✅ Popup OUTSIDE form -->
+
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <img src="cat.png" alt="Success" class="popup-img">
+        <h2>Fuck you!</h2>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
