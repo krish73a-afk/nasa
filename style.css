@@ -11,8 +11,10 @@ body {
     background: linear-gradient(135deg, #4facfe, #00f2fe);
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
 }
 
 /* CONTAINER */
@@ -26,8 +28,10 @@ body {
     background: white;
     padding: 25px;
     border-radius: 10px;
+    width: 100%;
     max-height: 90vh;
     overflow-y: auto;
+    overflow-x: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
@@ -55,11 +59,13 @@ body {
 .input-group {
     position: relative;
     margin: 10px 0;
+    width: 100%;
 }
 
 .input-group input,
 .input-group select {
     width: 100%;
+    max-width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -86,10 +92,24 @@ body {
     color: #4facfe;
 }
 
+/* TOP LABEL */
+.input-group .top-label {
+    top: -8px;
+    font-size: 11px;
+    transform: none;
+}
+
 /* RADIO + CHECKBOX */
-.radio-group, .checkbox-group {
+.radio-group,
+.checkbox-group {
     margin: 10px 0;
     font-size: 14px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: inline-block;
+    margin: 5px 8px 5px 0;
 }
 
 /* BUTTON */
@@ -130,6 +150,7 @@ button:hover {
 
 .popup img {
     width: 180px;
+    max-width: 80%;
 }
 
 /* ANIMATION */
@@ -138,6 +159,7 @@ button:hover {
         transform: scale(0.5);
         opacity: 0;
     }
+
     to {
         transform: scale(1);
         opacity: 1;
@@ -148,4 +170,41 @@ button:hover {
 body.fade-out {
     opacity: 0;
     transition: 2s;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .signup-box {
+        width: 100%;
+        padding: 18px 15px;
+        border-radius: 8px;
+        max-height: 95vh;
+    }
+
+    .signup-box h2 {
+        font-size: 22px;
+    }
+
+    .signup-box h3 {
+        font-size: 17px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .radio-group label,
+    .checkbox-group label {
+        display: block;
+        margin: 7px 0;
+    }
 }
