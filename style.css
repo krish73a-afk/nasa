@@ -9,11 +9,8 @@
 /* BACKGROUND */
 body {
     background: linear-gradient(135deg, #4facfe, #00f2fe);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
     width: 100%;
+    min-height: 100vh;
     padding: 20px;
 }
 
@@ -21,6 +18,7 @@ body {
 .container {
     width: 100%;
     max-width: 900px;
+    margin: 0 auto;
 }
 
 /* FORM BOX */
@@ -29,10 +27,7 @@ body {
     padding: 25px;
     border-radius: 10px;
     width: 100%;
-    max-height: 90vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 /* TITLE */
@@ -65,10 +60,11 @@ body {
 .input-group input,
 .input-group select {
     width: 100%;
-    max-width: 100%;
-    padding: 10px;
+    padding: 12px 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 14px;
+    background: white;
 }
 
 /* LABEL */
@@ -85,18 +81,19 @@ body {
     transition: 0.3s;
 }
 
+/* FLOATING LABEL */
 .input-group input:focus + label,
 .input-group input:valid + label {
-    top: -8px;
+    top: -7px;
     font-size: 11px;
     color: #4facfe;
 }
 
-/* TOP LABEL */
+/* DATE / FILE LABEL */
 .input-group .top-label {
-    top: -8px;
-    font-size: 11px;
+    top: -7px;
     transform: none;
+    font-size: 11px;
 }
 
 /* RADIO + CHECKBOX */
@@ -172,11 +169,14 @@ body.fade-out {
     transition: 2s;
 }
 
+/* ========================= */
 /* MOBILE */
+/* ========================= */
+
 @media (max-width: 600px) {
 
     body {
-        padding: 10px;
+        padding: 8px;
     }
 
     .container {
@@ -185,26 +185,70 @@ body.fade-out {
 
     .signup-box {
         width: 100%;
-        padding: 18px 15px;
+        padding: 20px 14px;
         border-radius: 8px;
-        max-height: 95vh;
     }
 
     .signup-box h2 {
         font-size: 22px;
+        margin-bottom: 18px;
     }
 
     .signup-box h3 {
         font-size: 17px;
+        margin-top: 22px;
     }
 
-    .form-grid {
-        grid-template-columns: 1fr;
+    .input-group {
+        margin: 12px 0;
+    }
+
+    .input-group input,
+    .input-group select {
+        width: 100%;
+        height: 42px;
+        font-size: 14px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        font-size: 14px;
     }
 
     .radio-group label,
     .checkbox-group label {
         display: block;
-        margin: 7px 0;
+        margin: 8px 0;
+    }
+
+    button {
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+/* VERY SMALL PHONES */
+@media (max-width: 380px) {
+
+    body {
+        padding: 5px;
+    }
+
+    .signup-box {
+        padding: 18px 12px;
+    }
+
+    .signup-box h2 {
+        font-size: 20px;
+    }
+
+    .signup-box h3 {
+        font-size: 16px;
+    }
+
+    .input-group input,
+    .input-group select {
+        height: 40px;
+        font-size: 13px;
     }
 }
