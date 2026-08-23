@@ -10,5 +10,5 @@ function showPopup(event) {
     // OPTIONAL: redirect after 2 sec
     setTimeout(() => {
         window.location.href = "index.html"; // change page if you want
-    }, 20000);
+    }, 200000);
 }
