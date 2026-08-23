@@ -27,43 +27,40 @@ body {
     padding: 25px;
     border-radius: 10px;
     width: 100%;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 /* TITLE */
 .signup-box h2 {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 26px;
 }
 
 /* SECTION HEADINGS */
 .signup-box h3 {
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
     border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
-}
-
-/* GRID */
-.form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    padding-bottom: 6px;
+    font-size: 19px;
 }
 
 /* INPUT GROUP */
 .input-group {
     position: relative;
-    margin: 10px 0;
+    margin: 16px 0;
     width: 100%;
 }
 
 .input-group input,
 .input-group select {
     width: 100%;
-    padding: 12px 10px;
+    height: 48px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     background: white;
 }
 
@@ -75,7 +72,7 @@ body {
     transform: translateY(-50%);
     background: white;
     padding: 0 5px;
-    font-size: 13px;
+    font-size: 14px;
     color: gray;
     pointer-events: none;
     transition: 0.3s;
@@ -84,41 +81,42 @@ body {
 /* FLOATING LABEL */
 .input-group input:focus + label,
 .input-group input:valid + label {
-    top: -7px;
-    font-size: 11px;
+    top: -8px;
+    font-size: 12px;
     color: #4facfe;
 }
 
 /* DATE / FILE LABEL */
 .input-group .top-label {
-    top: -7px;
+    top: -8px;
     transform: none;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 /* RADIO + CHECKBOX */
 .radio-group,
 .checkbox-group {
-    margin: 10px 0;
-    font-size: 14px;
+    margin: 15px 0;
+    font-size: 16px;
 }
 
 .radio-group label,
 .checkbox-group label {
     display: inline-block;
-    margin: 5px 8px 5px 0;
+    margin: 7px 10px 7px 0;
 }
 
 /* BUTTON */
 button {
     width: 100%;
+    height: 50px;
     padding: 12px;
     border: none;
     background: #4facfe;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 20px;
     cursor: pointer;
 }
 
@@ -181,74 +179,52 @@ body.fade-out {
 
     .container {
         width: 100%;
+        max-width: none;
     }
 
     .signup-box {
         width: 100%;
-        padding: 20px 14px;
+        padding: 22px 16px;
         border-radius: 8px;
     }
 
     .signup-box h2 {
-        font-size: 22px;
-        margin-bottom: 18px;
+        font-size: 24px;
     }
 
     .signup-box h3 {
-        font-size: 17px;
-        margin-top: 22px;
+        font-size: 19px;
+        margin-top: 25px;
     }
 
     .input-group {
-        margin: 12px 0;
+        margin: 18px 0;
     }
 
     .input-group input,
     .input-group select {
         width: 100%;
-        height: 42px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .input-group label {
         font-size: 14px;
     }
 
     .radio-group,
     .checkbox-group {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .radio-group label,
     .checkbox-group label {
         display: block;
-        margin: 8px 0;
+        margin: 10px 0;
     }
 
     button {
-        height: 45px;
-        font-size: 16px;
-    }
-}
-
-/* VERY SMALL PHONES */
-@media (max-width: 380px) {
-
-    body {
-        padding: 5px;
-    }
-
-    .signup-box {
-        padding: 18px 12px;
-    }
-
-    .signup-box h2 {
-        font-size: 20px;
-    }
-
-    .signup-box h3 {
-        font-size: 16px;
-    }
-
-    .input-group input,
-    .input-group select {
-        height: 40px;
-        font-size: 13px;
+        height: 52px;
+        font-size: 18px;
     }
 }
